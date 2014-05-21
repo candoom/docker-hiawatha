@@ -10,7 +10,7 @@ start:
 	docker run --name HIAWATHA -p 80:80 -d my_hiawatha
 
 stop:
-	docker stop my_hiawatha
+	docker stop HIAWATHA
 	docker rm $(docker ps -a -q)
 
 clean:
